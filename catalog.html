@@ -14,7 +14,14 @@
                     <img src="img\svg-technomart\logo-technomart.svg" width="109" height="19"
                         alt="Логотип интернет-магазина Техномарт">
                 </a>
-                <div>Поиск</div>
+
+                <form action="https://echo.htmlacademy.ru" method="get">
+                    <label>
+                        <input type="text" name="search" placeholder="Поиск">
+                        Поиск
+                    </label>
+                </form>
+
                 <ul class="actions-list">
                     <li><a href="">Закладки</a></li>
                     <li><a href="">Корзина</a></li>
@@ -78,23 +85,82 @@
                 <h2 class="title">Перфораторы</h2>
                 <div>
                     <div class="filter">
-                        <h2>Фильтр товаров</h2>
-                        <!-- Здесь будет форма -->
-                        <span>Фильтр</span>
-                        <span>Цена:</span>
-                        <span>Производители:</span>
-                        <span>BOSH</span>
-                        <span>ИНТЕРСКОЛ</span>
-                        <span>MAKITA</span>
-                        <span>DEWALT</span>
-                        <span>HITACHI</span>
-                        <span>Сортировка:</span>
-                        <span>По цене</span>
-                        <span>По типу</span>
-                        <span>По функциолалу</span>
+                        <h2 class="visually-hidden">Фильтр товаров</h2>
+                        <form action="https://echo.htmlacademy.ru" method="get">
+                            <p>Фильтр</p>
+
+                            <fieldset>
+                                <legend>Цена:</legend>
+                                <div></div>
+                            </fieldset>
+
+
+
+                            <fieldset>
+                                <legend>Производители:</legend>
+                                <ul>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="BOSH" checked>
+                                            BOSH
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="ИНТЕРСКОЛ">
+                                            ИНТЕРСКОЛ
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="MAKITA" checked>
+                                            MAKITA
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="DEWALT">
+                                            DEWALT
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" name="HITACHI">
+                                            HITACHI
+                                        </label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Питание:</legend>
+                                <ul>
+                                    <li>
+                                        <label>
+                                            <input type="radio" name="power-type" value="network">
+                                            Аккумуляторные
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" name="power-type" value="battery">
+                                            Сетевые
+                                        </label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+
+                        </form>
+
                     </div>
                     <div class="results">
                         <h2 class="visually-hidden">Список товаров</h2>
+                        <div class="sort">
+                            <span>Сортировка:</span>
+                            <span>По цене</span>
+                            <span>По типу</span>
+                            <span>По функциолалу</span>
+                        </div>
                         <ul class="items-list">
                             <li>
                                 <h3>
@@ -270,9 +336,7 @@
                 <p>
                     Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий
                     в
-                    кирпиче, бетоне и камне.
-                </p>
-                <p>
+                    кирпиче, бетоне и камне. <br>
                     Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять
                     функции
                     дрели, шуруповерта и отбойного молотка.
@@ -339,6 +403,16 @@
             </div>
         </section>
     </footer>
+
+    <section class="popup-basket">
+        <div class="popup-basket-container">
+            <h2>Подтверждение заказа</h2>
+            <p>Товар добавлен в корзину!</p>
+            <a href="">Оформить заказ</a>
+            <a href="">Продолжить покупки</a>
+            <button type="button">Закрыть</button>
+        </div>
+    </section>
 
 </body>
 
