@@ -27,7 +27,7 @@
                 <ul class="actions-list">
                     <li><a href="">Закладки:0</a></li>
                     <li><a href="">Корзина:10</a></li>
-                    <li><a href="">Оформить заказ</a></li>
+                    <li><a class="checkout-link" href="">Оформить заказ</a></li>
                 </ul>
             </div>
             <div class="header-second-line">
@@ -36,14 +36,14 @@
                     строительных материалов
                     и инструментов для ремонта
                 </p>
-                <div class="user">
-                    <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-                    <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                <div class="header-contacts">
+                    <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+                    <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 </div>
                 <div class="user">
                     <ul class="user-profile-list">
                         <li>
-                            <a href="">Равшан Джаншутович</a>
+                            <a href="">Равшан Джамшутович</a>
                         </li>
                         <li>
                             <a href="">
@@ -77,7 +77,7 @@
     </header>
 
     <main>
-        <section>
+        <section class="catalog-perforators">
             <div class="container">
                 <h1 class="visually-hidden">Каталог</h1>
                 <ul class="breadcrumbs">
@@ -88,9 +88,8 @@
                 <h2 class="title">Перфораторы</h2>
                 <div>
                     <div class="filter">
-                        <h2 class="visually-hidden">Фильтр товаров</h2>
+                        <h2>Фильтр:</h2>
                         <form action="https://echo.htmlacademy.ru" method="get">
-                            <p>Фильтр</p>
 
                             <fieldset>
                                 <legend>Цена:</legend>
@@ -152,17 +151,17 @@
                                     </li>
                                 </ul>
                             </fieldset>
-
+                            <button type="submit">Показать</button>
                         </form>
 
                     </div>
                     <div class="results">
                         <h2 class="visually-hidden">Список товаров</h2>
                         <div class="sort">
-                            <span>Сортировка:</span>
-                            <span>По цене</span>
-                            <span>По типу</span>
-                            <span>По функциолалу</span>
+                            <h3>Сортировка:</h3>
+                            <p>По цене</p>
+                            <p>По типу</p>
+                            <p>По функциолалу</p>
                         </div>
                         <ul class="items-list">
                             <li>
@@ -333,9 +332,9 @@
             </div>
         </section>
 
-        <section>
+        <section class="about-perforators">
             <div class="container">
-                <h2 class="title-servis">Пара слов о перфораторах</h2>
+                <h2 class="title-service">Пара слов о перфораторах</h2>
                 <p>
                     Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий
                     в
@@ -352,14 +351,14 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <a class="footer-logo" href="index.html">
-                <img src="img/svg-technomart/logo-technomart.svg" width="138" height="23"
-                    alt="Логотип интернет-магазина Техномарт">
-            </a>
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <a class="footer-tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
-            <div class="footer-first-list">
+        <div class="footer-first-line">
+            <div class="container">
+                <a class="footer-logo" href="index.html">
+                    <img src="img/svg-technomart/logo-technomart.svg" width="138" height="23"
+                        alt="Логотип интернет-магазина Техномарт">
+                </a>
+                <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                <a class="footer-tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
                 <ul class="footer-nav-pages">
                     <li><a href="">Компания</a></li>
                     <li><a href="">Новости</a></li>
@@ -367,8 +366,6 @@
                     <li><a href="">Доставка</a></li>
                     <li><a href="">Контакты</a></li>
                 </ul>
-            </div>
-            <div class="footer-second-list">
                 <ul class="footer-catalog-pages">
                     <li><a href="">Материалы</a></li>
                     <li><a href="">Техника</a></li>
@@ -378,24 +375,34 @@
             </div>
         </div>
 
-        <div class="container">
-            <p>@ 2010-2019 Компания "Техномарт"</p>
-            <p>Все права защищены</p>
-            <div class="footer-container">
+        <div class="footer-second-line">
+            <div class="container">
+                <p>@ 2010-2019 Компания "Техномарт"</p>
+                <p>Все права защищены</p>
+
                 <ul class="social-links">
-                    <li><a href="#">Вконтакте</a></li>
-                    <li><a href="#">Фейсбук</a></li>
-                    <li><a href="#">Инстаграм</a></li>
+                    <li>
+                        <a href="">
+                            <img src="img\svg-technomart\icon-vk.svg" width="26" height="15" alt="Группа Вконтакте">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="img\svg-technomart\icon-fb.svg" width="12" height="22" alt="Группа в Фейсбук">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="img\svg-technomart\icon-insta.svg" width="21" height="21"
+                                alt="Группа в Инстаграм">
+                        </a>
+                    </li>
                 </ul>
-            </div>
-            <div class="footer-container">
-                <p>
+                <p class="footer-container">
                     Обратная связь:
                     <a class="footer-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                 </p>
-            </div>
-            <div class="footer-container">
-                <p>
+                <p class="footer-container">
                     Разработано -
                     <a class="footer-link" href="https://htmlacademy.ru">htmlacademy.ru</a>
                 </p>

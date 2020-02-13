@@ -98,12 +98,14 @@ html {
 
 .actions-list,
 .header-buttons,
-.header-nav-pages {
+.header-nav-pages,
+.user-profile-list {
   list-style: none;
   /*убираем маркеры у списков*/
 }
 
-.header-buttons a {
+.header-buttons a,
+.user-profile-list a {
   color: #000000;
   /*меняем родной цвет ссылок*/
   background-color: #ffffff;
@@ -164,6 +166,19 @@ html {
   box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
+.user-profile-list {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.user-links-list a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
 /* Стили main */
 .service {
   background-color: #f4f7f9;
@@ -172,7 +187,8 @@ html {
 .catalog-list,
 .items-list,
 .logo-list,
-.service-list {
+.service-list,
+.breadcrumbs {
   list-style: none;
   /*убираем маркеры у списков*/
 }
@@ -199,21 +215,33 @@ div.options-2 {
 .catalog-list a,
 .options-1 a,
 .options-2 a {
-  color: #ffffff;
-}
-
-.catalog-list p {
-  font-size: 24px;
-  line-height: 30px;
-}
-
-p.p-comment {
+  width: 135px;
+  height: 38px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.10);
 }
 
-div.slider {
+.catalog-list a:hover,
+.catalog-list a:focus,
+.options-1 a:hover,
+.options-1 a:focus,
+.options-2 a:hover,
+.options-2 a:focus {
+  background-color: rgba(0, 0, 0, 0.20);
+}
+
+.catalog-list p,
+.options-1 p,
+.options-2 p {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.div.slider {
   width: 620px;
   height: 266px;
   background-color: #293449;
@@ -326,6 +354,72 @@ div.options-2 {
   border-radius: 3px;
 }
 
+/* Стили main catalog.html */
+.breadcrumbs a,
+.breadcrumbs-current {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-perforators {
+  font-family: 'PTSans', Arial, sans-serif;
+  color: #000000;
+}
+
+.filter h2 {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.filter legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.filter li {
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.filter button {
+  width: 130px;
+  height: 38px;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: inset 1px solid #e5e5e5;
+  border-radius: 3px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.sort {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.sort h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.sort p {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.about-perforators p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
 /* Стили footer */
 .footer-first-line {
   background-color: #32425c;
@@ -347,7 +441,8 @@ div.options-2 {
   box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
-.footer-first-line p {
+.footer-first-line p,
+.footer-first-line a {
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
@@ -405,13 +500,8 @@ div.options-2 {
   border-radius: 3px;
 }
 
-/* button.close {
-  width: 21px;
-  height: 21px;
-  /* background-image: url('img/svg-technomart/icon-close.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  border: none; */
+.popup-lost-message,
+.popup-map,
+.popup-basket {
+  display: none;
 }
-
-*/
